@@ -5,7 +5,7 @@ import linkShare from '../assets/links-line.svg'
 
 function WorkItem({project}) {
     const {title, summary, img, github, live, completed} = project
-     console.log(live)
+
     return (
     <div className='workItem'>
         <h4>{title}</h4>

@@ -172,3 +172,13 @@ div.workItem h4{
 .icons-links a {
   margin-left: 1.5rem;
 }
+
+div#footer {
+  padding: .75rem 1rem;
+}
+
+div#footer p{
+  text-align: center;
+  font-size: .75rem;
+  color: hsl(var(--clr-white)/.7);
+}

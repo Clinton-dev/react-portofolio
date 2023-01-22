@@ -1,8 +1,15 @@
 import React from 'react'
 
 function Footer() {
+  const currentYear = new Date().getFullYear()
+
   return (
-    <div className=''>Footer</div>
+    <div id="footer" className='gradient'>
+      <div>
+      Footer
+      </div>
+      <p>Designed and developed by clinton wambugu &#169; {currentYear}</p>
+    </div>
   )
 }
 
