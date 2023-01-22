@@ -146,4 +146,29 @@ div#work h3 {
   font-style: normal;
   text-decoration: underline;
   font-weight: 600;
+  margin-bottom: .95rem;
+}
+
+div.workItem {
+  /* border: 1px solid hsl(var(--clr-light-blue)); */
+  margin-bottom: 2.5rem;
+  padding: .5rem 1rem;
+}
+
+div.workItem h4{
+  font-family: var(--ff-serif);
+  color: hsl(var(--clr-light-blue));
+  margin-bottom: .5rem;
+}
+
+.icons-links {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: .5rem 0;
+}
+
+.icons-links a {
+  margin-left: 1.5rem;
 }
