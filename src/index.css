@@ -39,6 +39,15 @@ h2,
 h3,
 h4,
 h5,
+h6 {
+  font-family: var(--fs-serif);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
 h6,
 p {
   font-weight: 400;
@@ -177,8 +186,59 @@ div#footer {
   padding: .75rem 1rem;
 }
 
-div#footer p{
+div#footer p#copyright{
   text-align: center;
   font-size: .75rem;
   color: hsl(var(--clr-white)/.7);
 }
+
+div#contact-details {
+  display: flex;
+  justify-content: space-around;
+  margin-top: .7rem;
+}
+
+div#contact-section h4 {
+  font-weight: 600;
+}
+
+div#contact-section p {
+  font-size: 1.3rem;
+}
+
+div#form-section {
+  margin: 1rem 0;
+}
+
+div#form-section h4 {
+  margin-bottom: 1rem;
+}
+
+div#form-section > form > div > input{
+  width: 100%;
+  margin-bottom: .6rem;
+}
+
+
+div#form-section > form > input{
+  width: 100%;
+  margin-bottom: .6rem;
+}
+
+div#form-section > form > button{
+  width: 100%;
+  color: hsl(var(--clr-light-blue));
+  font-family: var(--ff-serif);
+  margin-top: .5rem;
+  border: none;
+  border-radius: .25rem;
+
+}
+
+div#form-section > form > button:hover{
+  color: hsl(var(--clr-white));
+  background-color: hsl(var(--clr-light-blue));
+  border: 1px solid hsl(var(--clr-white));
+  border-radius: .25rem;
+}
+
