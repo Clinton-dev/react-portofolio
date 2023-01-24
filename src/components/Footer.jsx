@@ -10,6 +10,25 @@ function Footer() {
   const [message, setMessage] = useState('')
   const currentYear = new Date().getFullYear()
 
+  const handleName =(e) => {
+    const {value} = e.target
+    setName(value)
+  }
+
+  const handleEmail =(e) => {
+    const {value} = e.target
+    setEmail(value)
+  }
+
+  const handleSubject =(e) => {
+    const {value} = e.target
+    setSubject(value)
+  }
+
+  const handleMessage =(e) => {
+    const {value} = e.target
+    setMessage(value)
+  }
 
   return (
     <div id="footer" className='gradient'>
@@ -36,11 +55,11 @@ function Footer() {
           <h4>Send me a message!</h4>
           <form >
             <div style={{display: 'flex', width: '100%', flexWrap: 'wrap'}}>
-              <input type="text" name='name' id='name'placeholder='name' value={name}/>
-              <input type="email" name="email" id="email" placeholder='email' value={email}/>
+              <input type="text" name='name' id='name'placeholder='name' value={name} onChange={handleName}/>
+              <input type="email" name="email" id="email" placeholder='email' value={email} onChange={handleEmail}/>
             </div>
-            <input type="text" name='subject' id='subject' placeholder='subject' value={subject}/>
-            <textarea name="message" id="message" cols="30" rows="5" value={message}>
+            <input type="text" name='subject' id='subject' placeholder='subject' value={subject} onChange={handleSubject}/>
+            <textarea name="message" id="message" cols="30" rows="5" value={message} onChange={handleMessage}>
               Your message
             </textarea>
             <button>Send Message</button>
