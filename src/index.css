@@ -39,6 +39,15 @@ h2,
 h3,
 h4,
 h5,
+h6 {
+  font-family: var(--fs-serif);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
 h6,
 p {
   font-weight: 400;
@@ -111,9 +120,8 @@ select {
 
 }
 
+/* navigation */
 nav {
-  display: flex;
-  justify-content: space-between;
   background-color: hsl(var(--clr-dark-purple));
   padding: 0.75rem 1rem;
 }
@@ -124,6 +132,20 @@ nav button {
   border-radius: .25rem;
 }
 
+
+div.desktop-nav > ul {
+  list-style-type: none;
+  display: flex;
+  column-gap: 1rem;
+  justify-content: flex-end;
+}
+
+div.desktop-nav > ul > li > a {
+  color: hsl(var(--clr-white));
+  text-decoration: none;
+}
+
+/* header section */
 div#header {
   padding: 0.75rem 1rem;
   text-align: left;
@@ -146,4 +168,274 @@ div#work h3 {
   font-style: normal;
   text-decoration: underline;
   font-weight: 600;
+  margin-bottom: .95rem;
 }
+
+div.workItem {
+  margin-bottom: 2.5rem;
+  padding: .5rem 1rem;
+}
+
+div.workItem h4{
+  font-family: var(--ff-serif);
+  color: hsl(var(--clr-light-blue));
+  margin-bottom: .5rem;
+}
+
+.icons-links {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: .5rem 0;
+}
+
+.icons-links a {
+  margin-left: 1.5rem;
+}
+
+/* Skills section */
+#skills-section {
+  padding: .75rem 2rem;
+  margin: 1rem 0;
+}
+
+#skills-section h4{
+  text-align: center;
+}
+
+#skills-section ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+#skills-section ul >li > img {
+  width: 2.5rem;
+}
+
+.skills-icons-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* todo animatimate individual icons upon mouse hover */
+
+/* Footer section */
+div#footer {
+  padding: .75rem 1rem;
+}
+
+div#footer p#copyright{
+  text-align: center;
+  font-size: .75rem;
+  color: hsl(var(--clr-white)/.7);
+}
+
+div#contact-details {
+  display: flex;
+  justify-content: space-around;
+  margin-top: .7rem;
+}
+
+#contact-section {
+  background-color: hsl(var(--clr-white) /.9);
+  color: #000;
+  border-radius: .3rem;
+  padding: .25rem;
+}
+
+#contact-section button {
+  width: 50%;
+  padding: .5rem;
+  margin: .4rem auto;
+  color: hsl(var(--clr-white));
+  border: none;
+  background-color: #000;
+}
+
+
+div#contact-section p {
+  font-size: 1.3rem;
+}
+
+/* linkedIn and tweeter */
+.social-links:hover {
+  color: hsl(var(--clr-light-blue))
+}
+
+div#form-section {
+  margin: 1rem 0;
+}
+
+div#form-section h4 {
+  margin-bottom: 1rem;
+}
+
+div#form-section > form > div > input{
+  width: 100%;
+  margin-bottom: .6rem;
+}
+
+
+div#form-section > form > input{
+  width: 100%;
+  margin-bottom: .6rem;
+}
+
+div#form-section > form > textarea{
+   width: 100%;
+}
+
+div#form-section > form > button{
+  width: 100%;
+  color: hsl(var(--clr-light-blue));
+  font-family: var(--ff-serif);
+  margin-top: .5rem;
+  border: none;
+  border-radius: .25rem;
+
+}
+
+div#form-section > form > button:hover{
+  color: hsl(var(--clr-white));
+  background-color: hsl(var(--clr-light-blue));
+  border: 1px solid hsl(var(--clr-white));
+  border-radius: .25rem;
+}
+
+@media only screen and (max-width: 425px) {
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  nav {
+    padding: .75rem 1.5rem;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  div#header {
+    padding: 0.75rem 1.5rem;
+    text-align: left;
+  }
+
+  div#work {
+    padding: 1rem 1.5rem;
+  }
+
+  div#skills-section {
+    padding: .75rem 2rem;
+  }
+
+  div#footer {
+    padding: .75rem 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  nav {
+    padding: .75rem 2.5rem;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  div#header {
+    padding: 0.75rem 2.5rem;
+    text-align: left;
+  }
+
+  div#header > p {
+    width: 95%;
+  }
+
+  div#work {
+    padding: 1rem 2.5rem;
+  }
+
+  div.workItem-content {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    column-gap: .7rem;
+  }
+
+  div.workItem:nth-child(even) > div.workItem-content {
+    flex-direction: row;
+  }
+
+  div#skills-section {
+    padding: .75rem 3.5rem;
+  }
+
+  div#footer {
+    padding: .75rem 2rem;
+  }
+
+  div#footer #footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: .5rem;
+    align-items: baseline;
+  }
+
+  div#contact-section {
+    padding: 1rem 1.4rem;
+    flex: 1 1;
+  }
+
+  div#form-section {
+    flex: 1 1;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  nav {
+    padding: 1rem 4.5rem;
+  }
+
+  div#header {
+    padding: 1rem 4.5rem;
+  }
+
+  div#work {
+    padding: 1rem 4.5rem;
+  }
+
+  div.workItem-content {
+    column-gap: 1rem;
+  }
+
+
+  div#skills-section {
+    padding: 1rem 4.5rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .skills-icons-grid {
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  div#footer {
+    padding: 1rem 4.5rem;
+  }
+
+  div#footer #footer-wrapper {
+    gap: 1rem;
+  }
+}
+
