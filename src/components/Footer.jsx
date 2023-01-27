@@ -41,7 +41,7 @@ function Footer() {
             <p>Contact me at clintonwambugu@gmail.com</p>
             <p>Or find me here: </p><br/>
               <div  style={{display: 'flex'}}>
-                <a className='social-links' href=" www.linkedin.com/in/clintonwambugu">
+                <a style={{color: 'hsl(204 47% 32%)'}} className='social-links' href=" www.linkedin.com/in/clintonwambugu">
                   <img src={linkedin}/>
                 </a>
                 <a className='social-links' href="https://twitter.com/WambuguClinton">

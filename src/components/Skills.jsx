@@ -21,6 +21,7 @@ import python from '../assets/python.png'
 function Skills() {
   return (
     <div id='skills-section'>
+      <div id='frameworks-languages'>
       <h4>Languages and Frameworks</h4>
         <ul className='skills-icons-grid'>
           <li>{html}html</li>
@@ -34,6 +35,9 @@ function Skills() {
           <li> <img src={django}/> django</li>
           <li><img src={python} /> python</li>
         </ul>
+      </div>
+
+      <div id='dev-tools'>
       <h4>Development Tools</h4>
         <ul className='skills-icons-grid'>
           <li>{git} git</li>
@@ -43,6 +47,7 @@ function Skills() {
           <li>{webpack} webpack</li>
           <li>{figma} figma</li>
         </ul>
+      </div>
     </div>
   )
 }
