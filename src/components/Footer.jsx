@@ -32,7 +32,7 @@ function Footer() {
 
   return (
     <div id="footer" className='gradient'>
-      <div>
+      <div id='footer-wrapper'>
         <div id='contact-section'>
           <h4>Say Hi!</h4>
           <p>Currently open for new opportunities or people to share ideas with! For any other information about me or my work, feel free to reach out!</p>

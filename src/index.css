@@ -372,11 +372,27 @@ div#form-section > form > button:hover{
   }
 
   div#skills-section {
-    padding: .75rem 2.5rem;
+    padding: .75rem 3.5rem;
   }
 
   div#footer {
-    padding: .75rem 2.5rem;
+    padding: .75rem 2rem;
+  }
+
+  div#footer #footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: .5rem;
+    align-items: flex-start;
+  }
+
+  div#contact-section {
+    flex: 1 1;
+  }
+
+  div#form-section {
+    flex: 1 1;
   }
 }
 
