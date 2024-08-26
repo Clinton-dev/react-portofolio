@@ -41,8 +41,8 @@ export default [
       "An app that shows you various details about space destinations, space flight and NASA",
     img: "/space-tour-app.jpg",
     github: "https://github.com/Clinton-dev/space-tourism-website",
-    live: "",
-    completed: false,
+    live: "clinton-dev.github.io/space-tourism/",
+    completed: true,
   },
 ];
 
